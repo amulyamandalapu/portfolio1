@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+
+{% block title %}Resume - My Portfolio{% endblock %}
+
+{% block content %}
+<div class="page-header">
+    <div class="container">
+        <h1>My Resume</h1>
+        <p class="breadcrumb">Home > Resume</p>
+    </div>
+</div>
+
+<section class="resume-section">
+    <div class="container">
+        <div class="resume-grid">
+            <div class="resume-upload">
+                <h2>Upload Your Resume</h2>
+                <p>Share your resume for future opportunities or download mine below.</p>
+                
+                <form method="POST" enctype="multipart/form-data" class="upload-form">
+                    <div class="file-input-wrapper">
+                        <input type="file" id="resume_file" name="resume_file" required 
+                               accept=".pdf,.txt,.doc,.docx,.png,.jpg,.jpeg,.gif"
+                               class="file-input">
+                        <label for="resume_file" class="file-label">
+                            <span class="file-icon">📄</span>
+                            <span class="file-text">Choose a file or drag it here</span>
+                            <span class="file-hint">Supported: PDF, DOC, DOCX, TXT, PNG, JPG (Max 16MB)</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">Upload Resume</button>
+                </form>
+                
+                <h3>Download My Resume</h3>
+                <p>Get a copy of my professional resume:</p>
+                <p style="font-size: 0.9em; color: #666;">Uploaded resumes will appear below</p>
+            </div>
+            
+            <div class="resume-content">
+                <h2>Professional Resume</h2>
+
+                <div class="personal-header">
+                    <h3>Amulya Mandalapu</h3>
+                    <p class="contact-line">+91-8897497013 | amulyamandalapu3@gmail.com</p>
+                    <p class="contact-line">
+                        <a href="https://github.com/amulyamandalapu" target="_blank">GitHub</a> •
+                        <a href="https://www.linkedin.com/in/mandalapu-amulya-bab3a3302" target="_blank">LinkedIn</a>
+                    </p>
+                    <p class="contact-line">Location: Sathupally, Telangana, India | College-id: 22C61A0530</p>
+                </div>
+
+                <div class="resume-section">
+                    <h3>Executive Summary</h3>
+                    <p>A sincere and hardworking computer science student from Mother Teresa Institute of Science and Technology with strong learning abilities and a keen interest in developing new skills. Seeking an opportunity to gain practical experience, enhance professional skills, and contribute positively to organizational goals. Currently pursuing B. Tech with focus on machine learning, data science, and web development.</p>
+                </div>
+                
+                <div class="resume-section">
+                    <h3>Technical Skills</h3>
+                    <ul class="skills-list">
+                        <li><strong>Programming Languages:</strong> Java, C - Basics, Python - Basics</li>
+                        <li><strong>Web Technologies:</strong> HTML, CSS</li>
+                        <li><strong>Databases:</strong> SQL</li>
+                        <li><strong>Core Concepts:</strong> Object-Oriented Programming (OOPs)</li>
+                    </ul>
+                </div>
+
+                <div class="resume-section">
+                    <h3>Professional Competencies</h3>
+                    <ul class="skills-list">
+                        <li><strong>Work Ethic:</strong> Demonstrates dedication, discipline, and strong commitment to delivering quality results</li>
+                        <li><strong>Team Contribution:</strong> Proven ability to collaborate effectively, share ideas, and support team objectives</li>
+                        <li><strong>Decision Making:</strong> Capable of making informed decisions under pressure while maintaining quality and deadlines</li>
+                        <li><strong>Adaptability:</strong> Performs effectively in dynamic environments and adapts to changing requirements</li>
+                        <li><strong>Analytical Thinking:</strong> Ability to analyze requirements, break down problems, and develop efficient solutions</li>
+                    </ul>
+                </div>
+                
+                <div class="resume-section">
+                    <h3>Academic Projects</h3>
+                    
+                    <div class="resume-item">
+                        <div class="resume-header">
+                            <h4>Titanic Survival Prediction</h4>
+                            <span class="resume-date">2024</span>
+                        </div>
+                        <ul class="duties-list">
+                            <li>Built a machine learning model to predict Titanic passenger survival using Python</li>
+                            <li>Applied data preprocessing, feature engineering, and EDA on key attributes</li>
+                            <li>Implemented and evaluated classification models (Logistic Regression, Decision Tree, Random Forest)</li>
+                            <li>Optimized performance through parameter tuning</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="resume-item">
+                        <div class="resume-header">
+                            <h4>AI Medical Diagnostic System</h4>
+                            <span class="resume-date">2024</span>
+                        </div>
+                        <ul class="duties-list">
+                            <li>Designed and developed an AI-based medical diagnostic system</li>
+                            <li>Applied data preprocessing and feature selection techniques</li>
+                            <li>Implemented machine learning algorithms for disease classification</li>
+                            <li>Evaluated performance using standard diagnostic metrics</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="resume-section">
+                    <h3>Education</h3>
+                    <div class="resume-item">
+                        <div class="resume-header">
+                            <h4>B. Tech - Computer Science & Engineering</h4>
+                            <span class="resume-date">2022 - 2026</span>
+                        </div>
+                        <p class="company">Mother Teresa Institute of Science and Technology, Sathupally, Telangana</p>
+                        <ul class="duties-list">
+                            <li>CGPA: 8.82</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-header">
+                            <h4>Intermediate (MPC)</h4>
+                            <span class="resume-date">2020 - 2022</span>
+                        </div>
+                        <p class="company">Sri Bhavishya Junior College, Vijayawada</p>
+                        <ul class="duties-list">
+                            <li>Percentage: 94.5%</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-header">
+                            <h4>10th Class (SSC)</h4>
+                            <span class="resume-date">2019 - 2020</span>
+                        </div>
+                        <p class="company">Sri Chaitanya Techno School, Vijayawada</p>
+                        <ul class="duties-list">
+                            <li>CGPA: 10</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="resume-section">
+                    <h3>Certifications</h3>
+                    <ul class="skills-list">
+                        <li>Python Essentials 1 - Cisco</li>
+                        <li>Database Management System - Nptel</li>
+                        <li>36 Hours Hackathon on Data Science, ML, AI</li>
+                        <li>Big Data Computing - Nptel</li>
+                        <li>Web Development - Internshala</li>
+                        <li>C Programming Language - Cisco</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="uploaded-files-section">
+    <div class="container">
+        <h2>Uploaded Resumes</h2>
+        
+        {% if uploaded_files %}
+        <div class="files-list">
+            {% for file in uploaded_files|reverse %}
+            <div class="file-item">
+                <div class="file-info">
+                    <span class="file-name">{{ file.original_name }}</span>
+                    <span class="file-date">{{ file.upload_time }}</span>
+                </div>
+                <a href="{{ url_for('download', filename=file.filename) }}" class="btn btn-small">Download</a>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="no-files">No resumes uploaded yet.</p>
+        {% endif %}
+    </div>
+</section>
+
+{% endblock %}
